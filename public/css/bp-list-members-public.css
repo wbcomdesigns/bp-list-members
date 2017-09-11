@@ -1,0 +1,97 @@
+#buddypress ul.item-list li div.is_friend div.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+    z-index:10000;
+}
+#buddypress ul.item-list li div.is_friend a.bp-list-members-btn {
+    background-color: #E9EBEE;
+    color: #6A7180;
+    padding: 0px 41px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#buddypress ul.item-list li div.is_friend div.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#buddypress ul.item-list li div.is_friend div.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+#buddypress #members-list li .action {
+    /*margin-right: 88px;*/
+}
+#buddypress ul.item-list li div.is_friend.generic-button{
+    position: relative;
+}
+.friends .bp-single-member::after {
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: left;
+}
+.friends #buddypress ul.item-list .bp-single-member{
+    overflow:visible !important;
+}
+#buddypress ul.item-list li div.is_friend div.dropdown-content .blm_add_group{
+    display: none;
+}
+#blm_group_delete {
+    float: right;
+}
+#blm_group_h1 {
+    float: left;
+}
+#buddypress ul.item-list li div.action div.dropdown-content {
+    width: 100% !important;
+}
+#buddypress ul.item-list li div.action .friendship-button {
+    width: 205px;
+    float: right;
+}
+/******custom*******/
+#buddypress #members-list li {
+    overflow: visible !important;
+}
+.buddypress #members-list li div.clear {
+    display: block;
+}
+#buddypress ul.item-list li div.action div.dropdown-content div {
+    width: 100%;
+}
+#buddypress ul.item-list li div.action div.dropdown-content div.blm_list_msg{
+    text-align: center;
+    display: none;
+}
+/*new*/
+#buddypress ul.item-list li div.action .friendship-button > a, #buddypress ul.item-list li div.action .friendship-button a {
+    padding: 5px 0;
+    border-radius: 0;
+}
+#buddypress ul.item-list li div.action .friendship-button .dropdown-content a {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+#buddypress #members-list::after {
+    content: "";
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+#buddypress .friendship-button .dropdown-content {
+    max-height: 250px;
+    overflow-y: auto !important;
+}
+#buddypress #item-body #pag-bottom {
+    padding-bottom: 170px;
+}
+/*new*/
