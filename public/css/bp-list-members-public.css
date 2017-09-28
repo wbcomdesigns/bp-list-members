@@ -47,9 +47,12 @@
 #blm_group_delete {
     float: right;
 }
-#blm_group_h1 {
-    float: left;
+.bplm-clear{
+    clear:both;
 }
+/*#blm_group_h1 {
+    float: left;
+}*/
 #buddypress ul.item-list li div.action div.dropdown-content {
     width: 100% !important;
 }

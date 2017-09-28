@@ -28,6 +28,7 @@ if (bp_has_members(bp_ajax_querystring('members'))) {
     $r = $_SERVER['REQUEST_URI'];
     $r = explode('/', $r);
     $r = array_filter($r);
+    
     if (in_array($name, $r)) {
         $name_index = 0;
         if ($index = array_search($name, $r)) {
@@ -172,15 +173,16 @@ if (bp_has_members(bp_ajax_querystring('members'))) {
 
     </div>
     <?php }else{ ?>
+            <div id="pag-top" style="padding-bottom:10px;"></div>
             <div id="message" class="info">
                 <p><?php _e("Sorry, no friends inside the list were found.", 'buddypress'); ?></p>
             </div>
     <?php } ?>
 
 <?php }else{ ?>
-
+    
     <div id="message" class="info">
-        <p><?php _e("Sorry, no members were found.", 'buddypress'); ?></p>
+        <p><?php _e("Sorry, no members were found.daw", 'buddypress'); ?></p>
     </div>
 
 <?php } ?>

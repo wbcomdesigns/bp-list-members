@@ -62,7 +62,7 @@
                     $('#buddypress ul.item-list li div.action div.dropdown-content div.blm_create_list').show();
                     window.location.reload();
                 });
-                $(this).val('');
+                //$(this).val('');
 
             }
         });
