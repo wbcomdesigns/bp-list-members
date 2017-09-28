@@ -72,4 +72,44 @@ function run_bp_list_members() {
 	$plugin->run();
 
 }
-run_bp_list_members();
+
+add_action('plugins_loaded', 'bp_list_members_plugin_init');
+
+/**
+ * Function to check buddypress is active to enable disable plugin functionality.
+ */
+ function bp_list_members_plugin_init(){
+ 	$bp_active = in_array( 'buddypress/bp-loader.php', get_option( 'active_plugins' ) );
+    if ( current_user_can('activate_plugins') && $bp_active !== true ) {
+        add_action('admin_notices', 'bp_list_member_plugin_admin_notice');
+    } else {
+        run_bp_list_members();
+        add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), 'bp_list_members_plugin_links' );
+    }
+ }
+
+ /**
+ * Function to show admin notice when BuddyPress is deactivate.
+ */
+function bp_list_member_plugin_admin_notice() {
+    $bplist_plugin = 'BP List Members';
+    $bp_plugin = 'BuddyPress';
+
+    echo '<div class="error"><p>'
+    . sprintf(__('%1$s is ineffective as it requires %2$s to be installed and active.', 'bp-list-members'), '<strong>' . $bplist_plugin . '</strong>', '<strong>' . $bp_plugin . '</strong>')
+    . '</p></div>';
+    if (isset($_GET['activate'])) unset($_GET['activate']);
+}
+
+/**
+ * Function to add plugin links.
+ * @param      string    $links
+ * @return     string    $links
+ */
+function bp_list_members_plugin_links( $links ) {
+    $bplist_links = array(
+        '<a href="https://wbcomdesigns.com/contact/" target="_blank">'.__( 'Support', 'bp-list-members' ).'</a>'
+    );
+    return array_merge( $links, $bplist_links );
+}
+
