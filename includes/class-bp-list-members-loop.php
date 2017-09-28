@@ -20,7 +20,7 @@ do_action('bp_before_members_loop');
 <?php endif; ?>
 
 <?php
-if (bp_has_members(bp_ajax_querystring('members'))) :
+if (bp_has_members(bp_ajax_querystring('members'))) {
     global $members_template;
     
     $name = bp_get_displayed_user_username();
@@ -53,6 +53,7 @@ if (bp_has_members(bp_ajax_querystring('members'))) :
         }
     }
     $members_template->total_member_count = count($uid);
+    if($members_template->total_member_count > 0){
     ?>
 
     <div id="pag-top" class="pagination">
@@ -170,14 +171,19 @@ if (bp_has_members(bp_ajax_querystring('members'))) :
         </div>
 
     </div>
+    <?php }else{ ?>
+            <div id="message" class="info">
+                <p><?php _e("Sorry, no friends inside the list were found.", 'buddypress'); ?></p>
+            </div>
+    <?php } ?>
 
-<?php else: ?>
+<?php }else{ ?>
 
     <div id="message" class="info">
         <p><?php _e("Sorry, no members were found.", 'buddypress'); ?></p>
     </div>
 
-<?php endif; ?>
+<?php } ?>
 
 <?php
 /**

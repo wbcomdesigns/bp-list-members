@@ -30,6 +30,11 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+//Define Plugin Constants
+define( 'BPLM_PLUGIN_PATH', plugin_dir_path(__FILE__) );
+define( 'BPLM_PLUGIN_URL', plugin_dir_url(__FILE__) );
+define( 'BPLM_TEXT_DOMAIN', 'bp-list-members' );
+
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-bp-list-members-activator.php

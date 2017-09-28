@@ -81,7 +81,7 @@ class Bp_List_Members_Ajax_Tabs {
     }
 
     public function bp_list_members_close_friends_show_title() {
-        echo 'Close Friends List';
+        _e('Close Friends List',BPLM_TEXT_DOMAIN);
     }
 
     public function bp_list_members_close_friends_show_content() {
@@ -195,7 +195,7 @@ class Bp_List_Members_Ajax_Tabs {
                     foreach ($applied_value as $key => $value) {
                         $applied_value_slug = strtolower(preg_replace('/\s+/', '_', $value));
                         if ($applied_value_slug === $current_screen) {
-                            echo '<span id="blm_group_delete"><a href="javascript:void(0)" class="button" id="delete_group" data-id="' . $current_screen . '">Delete List</a></span>';
+                            echo '<span id="blm_group_delete"><a href="javascript:void(0)" class="button" id="delete_group" data-id="' . $current_screen . '">'.__('Delete List',BPLM_TEXT_DOMAIN).'</a></span>';
                             require_once plugin_dir_path(dirname(__FILE__)) . 'includes/class-bp-list-members-loop.php';
                         }
                     }
