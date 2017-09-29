@@ -1,0 +1,91 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BP List Members 1.0.0\n"
+"POT-Creation-Date: 2017-09-29 11:34+0530\n"
+"PO-Revision-Date: 2017-09-29 11:35+0530\n"
+"Last-Translator: \n"
+"Language-Team: wbcomdesigns <admin@wbcomdesigns.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-bp-list-members-admin.php:102
+msgid "BP List Members plugin required 'Friend Connections' must active."
+msgstr ""
+
+#: bp-list-members.php:84
+#, php-format
+msgid "%1$s is ineffective as it requires %2$s to be installed and active."
+msgstr ""
+
+#: bp-list-members.php:96
+msgid "Support"
+msgstr ""
+
+#: includes/class-bp-list-members-ajax-tabs.php:64
+#: public/class-bp-list-members-public.php:157
+#: public/class-bp-list-members-public.php:159
+#: public/class-bp-list-members-public.php:174
+#: public/class-bp-list-members-public.php:176
+#: public/class-bp-list-members-public.php:184
+#: public/class-bp-list-members-public.php:186
+#: public/class-bp-list-members-public.php:200
+#: public/class-bp-list-members-public.php:202
+#: public/class-bp-list-members-public.php:217
+#: public/class-bp-list-members-public.php:219
+#: public/class-bp-list-members-public.php:227
+#: public/class-bp-list-members-public.php:229
+msgid "Close Friends"
+msgstr ""
+
+#: includes/class-bp-list-members-ajax-tabs.php:84
+msgid "Close Friends List"
+msgstr ""
+
+#: includes/class-bp-list-members-ajax-tabs.php:198
+msgid "Delete List"
+msgstr ""
+
+#: includes/class-bp-list-members-loop.php:178
+msgid "Sorry, no friends inside the list were found."
+msgstr ""
+
+#: includes/class-bp-list-members-loop.php:185
+msgid "Sorry, no members were found.daw"
+msgstr ""
+
+#: public/class-bp-list-members-public.php:146
+#: public/class-bp-list-members-public.php:247
+msgid "Friends"
+msgstr ""
+
+#: public/class-bp-list-members-public.php:243
+msgid "Create List"
+msgstr ""
+
+#: public/class-bp-list-members-public.php:245
+msgid "Unfriend"
+msgstr ""
+
+#: public/class-bp-list-members-public.php:508
+msgid "Viewing 1 active member"
+msgstr ""
+
+#: public/class-bp-list-members-public.php:514
+msgid "Viewing 1 member with friends"
+msgstr ""
+
+#: public/class-bp-list-members-public.php:520
+msgid "Viewing 1 online member"
+msgstr ""
+
+#: public/class-bp-list-members-public.php:526
+msgid "Viewing 1 member"
+msgstr ""
