@@ -143,7 +143,7 @@ class Bp_List_Members_Public {
 
         $bp_user_groups = get_option(BLM_GROUPS_OPTIONS);
 
-        $fricon_remove = '<i class="fa fa-caret-down" data-original-title="' . __("Friends", $this->plugin_name) . '" data-toggle="tooltip"></i>';
+        $fricon_remove = '<i class="fa fa-caret-down" data-original-title="' . __("Friends", BPLM_TEXT_DOMAIN) . '" data-toggle="tooltip"></i>';
         $user_groups = '';
         if (in_array($fid, $exist_in_list_tmp)) {
             $euser_groups = '';
@@ -154,9 +154,9 @@ class Bp_List_Members_Public {
                     if ($user_id === $applied_key) {
 
                         if (isset($exist_in_list['close_friends']) && $exist_in_list['close_friends'] === 1) {
-                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                         } else {
-                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                         }
                         foreach ($applied_value as $key => $a_value) {
                             $ch = '';
@@ -171,9 +171,9 @@ class Bp_List_Members_Public {
                         $suser_groups = $user_groups_tmp;
                     } else {
                         if (isset($exist_in_list['close_friends']) && $exist_in_list['close_friends'] === 1) {
-                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                         } else {
-                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                         }
                         $suser_groups = $user_groups_tmp;
                     }
@@ -181,9 +181,9 @@ class Bp_List_Members_Public {
                 $euser_groups = $suser_groups;
             } else {
                 if (isset($exist_in_list['close_friends']) && $exist_in_list['close_friends'] === 1) {
-                    $puser_groups = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                    $puser_groups = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                 } else {
-                    $puser_groups = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                    $puser_groups = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                 }
                 $euser_groups = $puser_groups;
             }
@@ -197,9 +197,9 @@ class Bp_List_Members_Public {
                     if ($user_id === $applied_key) {
 
                         if (isset($exist_in_list['close_friends']) && $exist_in_list['close_friends'] === 1) {
-                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                         } else {
-                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                         }
                         foreach ($applied_value as $key => $a_value) {
                             $ch = '';
@@ -214,9 +214,9 @@ class Bp_List_Members_Public {
                         $suser_groups = $user_groups_tmp;
                     } else {
                         if (isset($exist_in_list['close_friends']) && $exist_in_list['close_friends'] === 1) {
-                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                         } else {
-                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                            $user_groups_tmp = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                         }
                         $suser_groups = $user_groups_tmp;
                     }
@@ -224,9 +224,9 @@ class Bp_List_Members_Public {
                 $euser_groups = $suser_groups;
             } else {
                 if (isset($exist_in_list['close_friends']) && $exist_in_list['close_friends'] === 1) {
-                    $puser_groups = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                    $puser_groups = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick  fa fa-check" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                 } else {
-                    $puser_groups = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>' . ' Close Friends</a>';
+                    $puser_groups = '<a href = "javascript:void(0)" data-fid="' . $fid . '" data-id="close_friends-' . $button['link_id'] . '" data-slug="close_friends" class="blm_friends close_friends" id="close_friends-' . $button['link_id'] . '"><span><i class="blm_tick" aria-hidden="true"></i></span>'.__('Close Friends',BPLM_TEXT_DOMAIN).'</a>';
                 }
                 $euser_groups = $puser_groups;
             }
@@ -240,11 +240,11 @@ class Bp_List_Members_Public {
                 $button['link_class'] .= ' bp-list-members-btn';
                 $append_lists = '<div class="dropdown-content" id="dropdown-content-' . $button['link_id'] . '">'
                         . $user_groups
-                        . '<div class="blm_create_list"><a href="javascript:void(0)" data-mid="' . $fid . '" class="add-new-friend" id="add-' . $button['link_id'] . '"><span><i class="fa fa-plus" aria-hidden="true"></i></span>  Create List</a><div class="blm_add_group"><input type="text" name="blm_group_name" class="blm_group_name" data-mmid="' . $fid . '" id="blm_group_name_' . $button['link_id'] . '" ></div></div>'
+                        . '<div class="blm_create_list"><a href="javascript:void(0)" data-mid="' . $fid . '" class="add-new-friend" id="add-' . $button['link_id'] . '"><span><i class="fa fa-plus" aria-hidden="true"></i></span>'.__('Create List',BPLM_TEXT_DOMAIN).'</a><div class="blm_add_group"><input type="text" name="blm_group_name" class="blm_group_name" data-mmid="' . $fid . '" id="blm_group_name_' . $button['link_id'] . '" ></div></div>'
                         . '<div class="blm_list_msg"><span><i class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i></i></span></div>'
-                        . '<a class="blm_remove_friend" href="' . $link_href . '"><span><i class="fa fa-times" aria-hidden="true"></i></span>  Unfriend</a>'
+                        . '<a class="blm_remove_friend" href="' . $link_href . '"><span><i class="fa fa-times" aria-hidden="true"></i></span>'.__('Unfriend',BPLM_TEXT_DOMAIN).'</a>'
                         . '</div>';
-                $button['link_text'] = __('Friends', $this->plugin_name) . ' ' . $fricon_remove . $append_lists;
+                $button['link_text'] = __('Friends', BPLM_TEXT_DOMAIN) . ' ' . $fricon_remove . $append_lists;
             }
         }
 

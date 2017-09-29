@@ -61,7 +61,7 @@ class Bp_List_Members_Ajax_Tabs {
             $parent_slug = 'friends';
             bp_core_new_subnav_item(
                     array(
-                        'name' => __('Close Friends', $this->plugin_name),
+                        'name' => __('Close Friends', BPLM_TEXT_DOMAIN),
                         'slug' => 'close_friends',
                         'parent_url' => $bp->loggedin_user->domain . $parent_slug . '/',
                         'parent_slug' => $parent_slug,
@@ -106,7 +106,7 @@ class Bp_List_Members_Ajax_Tabs {
 
                         bp_core_new_subnav_item(
                                 array(
-                                    'name' => __($group_name, $this->plugin_name),
+                                    'name' => __($group_name, BPLM_TEXT_DOMAIN),
                                     'slug' => $group_slug,
                                     'parent_url' => $bp->loggedin_user->domain . $parent_slug . '/',
                                     'parent_slug' => $parent_slug,

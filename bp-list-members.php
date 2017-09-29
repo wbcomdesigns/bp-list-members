@@ -35,26 +35,6 @@ define( 'BPLM_PLUGIN_PATH', plugin_dir_path(__FILE__) );
 define( 'BPLM_PLUGIN_URL', plugin_dir_url(__FILE__) );
 define( 'BPLM_TEXT_DOMAIN', 'bp-list-members' );
 
-/**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-bp-list-members-activator.php
- */
-function activate_bp_list_members() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-bp-list-members-activator.php';
-	Bp_List_Members_Activator::activate();
-}
-
-/**
- * The code that runs during plugin deactivation.
- * This action is documented in includes/class-bp-list-members-deactivator.php
- */
-function deactivate_bp_list_members() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-bp-list-members-deactivator.php';
-	Bp_List_Members_Deactivator::deactivate();
-}
-
-register_activation_hook( __FILE__, 'activate_bp_list_members' );
-register_deactivation_hook( __FILE__, 'deactivate_bp_list_members' );
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -101,7 +81,7 @@ function bp_list_member_plugin_admin_notice() {
     $bp_plugin = 'BuddyPress';
 
     echo '<div class="error"><p>'
-    . sprintf(__('%1$s is ineffective as it requires %2$s to be installed and active.', 'bp-list-members'), '<strong>' . $bplist_plugin . '</strong>', '<strong>' . $bp_plugin . '</strong>')
+    . sprintf(__('%1$s is ineffective as it requires %2$s to be installed and active.', BPLM_TEXT_DOMAIN), '<strong>' . $bplist_plugin . '</strong>', '<strong>' . $bp_plugin . '</strong>')
     . '</p></div>';
     if (isset($_GET['activate'])) unset($_GET['activate']);
 }
@@ -113,7 +93,7 @@ function bp_list_member_plugin_admin_notice() {
  */
 function bp_list_members_plugin_links( $links ) {
     $bplist_links = array(
-        '<a href="https://wbcomdesigns.com/contact/" target="_blank">'.__( 'Support', 'bp-list-members' ).'</a>'
+        '<a href="https://wbcomdesigns.com/contact/" target="_blank">'.__( 'Support', BPLM_TEXT_DOMAIN ).'</a>'
     );
     return array_merge( $links, $bplist_links );
 }

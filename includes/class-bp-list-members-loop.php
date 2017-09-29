@@ -175,14 +175,14 @@ if (bp_has_members(bp_ajax_querystring('members'))) {
     <?php }else{ ?>
             <div id="pag-top" style="padding-bottom:10px;"></div>
             <div id="message" class="info">
-                <p><?php _e("Sorry, no friends inside the list were found.", 'buddypress'); ?></p>
+                <p><?php _e("Sorry, no friends inside the list were found.", BPLM_TEXT_DOMAIN); ?></p>
             </div>
     <?php } ?>
 
 <?php }else{ ?>
     
     <div id="message" class="info">
-        <p><?php _e("Sorry, no members were found.daw", 'buddypress'); ?></p>
+        <p><?php _e("Sorry, no members were found.daw", BPLM_TEXT_DOMAIN); ?></p>
     </div>
 
 <?php } ?>

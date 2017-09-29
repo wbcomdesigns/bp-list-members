@@ -99,7 +99,7 @@ class Bp_List_Members_Admin {
         if (!bp_is_active('friends')) {
             ?>
             <div class="notice notice-warning is-dismissible">
-                <p><?php _e('BP List Members plugin required \'Friend Connections\' must active.', $this->plugin_name); ?></p>
+                <p><?php _e('BP List Members plugin required \'Friend Connections\' must active.', BPLM_TEXT_DOMAIN); ?></p>
             </div>
             <?php
         }
