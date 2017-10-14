@@ -3,7 +3,9 @@ Contributors: wbcomdesigns
 Donate link: https://wbcomdesigns.com/donate/
 Tags: buddypress, friend lists,
 Requires at least: 3.0.1
-Tested up to: 4.78.1Stable tag: 1.0.0License: GPLv2 or later
+Tested up to: 4.8.2
+Stable tag: 1.0.0
+License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This Plugin will extend the BuddyPress functionality and will allow to create friend groups/lists.
